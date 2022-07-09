@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OkCupid Profiles</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://unpkg.com/tabulator-tables@5.1.8/dist/css/tabulator.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Dating Profiles</h1>
+        <p>Explore the dataset</p>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Select Column Name</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)">
+            <option value="age">Age</option>
+            <option value="body_type">Body Type</option>
+            <option value="diet">Diet</option>
+            <option value="sign">signs</option>
+            <option value="offspring">Children</option>
+            <option value="pets">Pets</option>
+            <option value="religion">Religion</option>
+            <option value="status">Status</option>
+            <option value="sex">Sex</option>
+          </select>
+        </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div id="bar"></div>
+      </div>
+    </div>
+  </div>
+  <canvas id="myChart" width="400" height="400"></canvas>
+  <div id="tabulator_table"></div>
+  
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./StarterCode/Static/app3.js"></script>
+  <script src="//unpkg.com/sunburst-chart"></script>
+  <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+
+ <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.1.8/dist/js/tabulator.min.js"></script>
+  
+</body>
+
+</html>
